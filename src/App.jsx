@@ -1,9 +1,9 @@
-
+import Home from "./pages/Home"
 function App() {
 
   return (
    <>
-      <h1>Project set up is complete with tailwindcss</h1>
+      <Home />
    </>
   )
 }
