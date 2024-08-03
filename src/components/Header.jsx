@@ -3,6 +3,7 @@ import { TiArrowLeft, TiArrowRight } from "react-icons/ti"
 import headerlogo from '../assets/Logo/header-logo.svg'
 import { LuContact } from "react-icons/lu"
 import { LiaShoppingBagSolid } from "react-icons/lia"
+import { FaBars } from "react-icons/fa"
 
 //code for header parts.
 function Header() {
@@ -20,7 +21,7 @@ function Header() {
         </nav>
         <div id="bottom-nav" className="text-[#ffff ] bg-[#524BAD] py-[1rem] px-[2rem] w-[100%] mt-[1rem]">
             <nav id="top-bar" className="max-w-[120rem] mx-auto flex justify-between items-center border-b-[1px] border-[#ffffffad] pb-[1.2rem]">
-                <div id="serch" className="flex gap-[1rem] items-center">
+                <div id="serch" className="hidden sm:flex gap-[1rem] items-center">
                     <div id="search-logo">
                         <CiSearch size={'2rem'}/>
                     </div>
@@ -31,14 +32,16 @@ function Header() {
                 <div id="logo" className="w-[22rem]">
                     <img className="w-[100%] h-[100%]" src={headerlogo}  alt="header-logo" />
                 </div>
-                <div id="menu" className="flex gap-[3rem]">
+                <div id="menu" className="sm:flex gap-[3rem] hidden ">
                     <a href=""><LuContact size={'2rem'} /></a>
                     <a href=""><CiHeart size={'2rem'} /></a>
                     <a href=""><LiaShoppingBagSolid size={'2rem'} /></a>
                     <a href=""><CiFolderOn size={'2rem'} /></a>
                 </div>
+                <div id="bars" className="sm:hidden hover:cursor-pointer">
+                <FaBars size={'2.4rem'} /></div>
             </nav>
-            <nav id="bottom-bar" className="max-w-[120rem] mx-auto px-[2rem] gap-[1.5rem] py-[.8rem] flex">
+            <nav id="bottom-bar" className=" hidden  max-w-[120rem] mx-auto px-[2rem] gap-[1.5rem] py-[.8rem] md:flex">
                 {
                     lists.map((list , idx) =>{
                         return <li className="list-none text-[1.2rem] uppercase" key={idx} id="list">{list}</li>

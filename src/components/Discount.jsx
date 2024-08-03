@@ -11,7 +11,7 @@ function Discount() {
       <div id="heading">
         <h1 className="text-[3rem] font-[600] text-center">Follow products and discounts on Instagram</h1>
       </div>
-      <div id="image-section" className=" grid grid-cols-6 gap-[2rem] my-[1rem]">
+      <div id="image-section" className=" grid grid-cols-2 lg:grid-cols-6 sm:grid-cols-3 gap-[2rem] my-[1rem]">
         {
             imgArr.map((img,  idx) =>{ 
                 return <img className='' src={img} key={idx} alt="discount_iamge" />

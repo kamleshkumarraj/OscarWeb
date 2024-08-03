@@ -14,7 +14,7 @@ function BestSeller() {
         <h2 className="text-[1.6rem] mb-[3.5rem]">See why these signage favorites are flying off our virtual shelves</h2>
       </div>
 
-      <div id="bset-product-section" className='grid grid-cols-4 grid-rows-2 gap-[4rem]'>
+      <div id="bset-product-section" className='grid xl:grid-cols-4 lg:grid-rows-2 sm:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-[4rem]'>
         {
             bsetImageArray.map((img , idx) => {
                return <BestCart key={idx}
