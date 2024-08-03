@@ -3,6 +3,8 @@ import { TiArrowLeft, TiArrowRight } from "react-icons/ti"
 import headerlogo from '../assets/Logo/header-logo.svg'
 import { LuContact } from "react-icons/lu"
 import { LiaShoppingBagSolid } from "react-icons/lia"
+
+//code for header parts.
 function Header() {
     const lists = ["Bussiness Cards","PostCard & Print Advertising" , "Sign Banner & Poster","Labels, Stickers & Packagins","Home & Photo gifts","Wedding","Clothing & Bags","Design & logo"]
   return (
